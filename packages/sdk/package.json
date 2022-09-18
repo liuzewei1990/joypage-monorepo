@@ -1,0 +1,23 @@
+{
+    "name": "@joy/sdk",
+    "version": "0.0.0",
+    "description": "项目基础库支持,如apis、utils",
+    "author": "874396180 <liupandeng@bicai365.com>",
+    "homepage": "",
+    "license": "ISC",
+    "main": "src/index.js",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "xxx"
+    },
+    "scripts": {
+        "test": "node ./__tests__/sdk.test.js"
+    }
+}
