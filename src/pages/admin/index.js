@@ -4,5 +4,5 @@ import router from "./router";
 
 import joyParse from "@joy/parse";
 import joySdk from "@joy/sdk";
-
+console.log(joyParse);
 createApp(App).use(router).use(joyParse).mount("#app");
