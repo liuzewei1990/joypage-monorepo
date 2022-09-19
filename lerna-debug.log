@@ -1,0 +1,13 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   globs: [ 'package/sdk' ],
+0 silly argv   lernaVersion: '5.5.1',
+0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js',
+0 silly argv   pkg: 'axiox'
+0 silly argv }
+1 notice cli v5.5.1
+2 verbose rootPath D:\lerna-demo2
+3 error HttpErrorGeneral: 404 Not Found - GET https://registry.npmmirror.com/axiox - [NOT_FOUND] axiox not found
+3 error     at D:\lerna-demo2\node_modules\npm-registry-fetch\lib\check-response.js:95:15
+3 error     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+3 error     at async RegistryFetcher.packument (D:\lerna-demo2\node_modules\pacote\lib\registry.js:92:19)
