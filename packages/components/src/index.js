@@ -1,29 +1,28 @@
-import BaseSelect from "./base-select/index.js";
-import BaseTable from "./base-table/index.js";
-import ModuleForm from "./module-form.async/index.js";
-import ModuleTable from "./module-table/index.js";
-// 将这里全部做成异步组件，支持正常注册,渲染该组件时才进行异步加载
-export const Components = [BaseSelect, BaseTable, ModuleForm, ModuleTable];
+import { defineAsyncComponent } from "vue";
+const BaseSelect = defineAsyncComponent(() => import(/* webpackChunkName: "base-select" */ "./base-select/index.vue"));
+const BaseTable = defineAsyncComponent(() => import(/* webpackChunkName: "base-table" */ "./base-table/index.vue"));
+const ModuleForm = defineAsyncComponent(() => import(/* webpackChunkName: "module-form" */ "./module-form.async/index.vue"));
+const ModuleTable = defineAsyncComponent(() => import(/* webpackChunkName: "module-table" */ "./module-table/index.vue"));
 
-export const menuList = [
+export const Components = [
     {
         title: "基础-下拉组件",
-        componentName: BaseSelect.name,
+        name: "base-select",
         component: BaseSelect
     },
     {
         title: "基础-表格组件",
-        componentName: BaseTable.name,
+        name: "base-table",
         component: BaseTable
     },
     {
         title: "模块-表单",
-        componentName: ModuleForm.name,
+        name: "module-form",
         component: ModuleForm
     },
     {
         title: "模块-机构表格",
-        componentName: ModuleTable.name,
+        name: "module-table",
         component: ModuleTable
     }
 ];
