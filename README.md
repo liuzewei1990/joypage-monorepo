@@ -1,4 +1,4 @@
-## 技术架构
+## 技术架构  微项目 + monorepo架构的结合
 ```
 lerna       负责monorepo架构管理
 yarn        负责依赖管理

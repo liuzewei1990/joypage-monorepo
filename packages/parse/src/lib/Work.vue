@@ -2,18 +2,23 @@
     <!-- 表示路由页面根节点 -->
     <section class="work">
         <!-- 可以是多个视图 pages -->
-        <WorkView></WorkView>
+        <keep-alive>
+            <component :is="currView"></component>
+        </keep-alive>
     </section>
 </template>
 
 <script lang="ts">
-    import { defineComponent } from "vue";
+    import { defineComponent, ref } from "vue";
     import WorkView from "./WorkView.vue";
 
     export default defineComponent({
         components: { WorkView },
         setup() {
-            return {};
+            const currView = ref("WorkView");
+
+            // 通过work对象来通知{currView变量}渲染哪个WorkView
+            return { currView };
         }
     });
 </script>

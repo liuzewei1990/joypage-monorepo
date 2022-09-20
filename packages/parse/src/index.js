@@ -1,12 +1,12 @@
-import { default as menuList, Components } from "@joy/components";
+import { menuList, Components } from "@joy/components";
 import WorkComponent from "./lib/Work.vue";
 
 const install = function (Vue) {
     // 注册解析器组件
     Vue.component(WorkComponent.name, WorkComponent);
     // 注册所有组件
-    Components.forEach((component) => {
-        Vue.component(component.name, component);
+    Components.forEach((co) => {
+        Vue.component(co.name, co.asyncComponent);
     });
 };
 

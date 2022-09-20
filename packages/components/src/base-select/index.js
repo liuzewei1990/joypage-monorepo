@@ -1,7 +1,8 @@
-import Component from "./component.vue";
+import { defineAsyncComponent } from "vue";
 
-Component.install = function (Vue) {
-    Vue.component(Component.name, Component);
+const asyncComponent = defineAsyncComponent(() => import(/* webpackChunkName: "base-select" */ "./component.vue"));
+
+export default {
+    name: "base-select",
+    asyncComponent
 };
-
-export default Component;
