@@ -1,6 +1,6 @@
 <template>
     <!-- 表示页面中的一个视图 -->
-    <div class="work-view">
+    <div>
         <!-- 视图中的组件模块 -->
         <WorkViewComponent></WorkViewComponent>
     </div>

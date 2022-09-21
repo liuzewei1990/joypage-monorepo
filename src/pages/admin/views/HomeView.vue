@@ -2,6 +2,8 @@
     <div class="home">
         <p>测试</p>
         <base-select></base-select>
+        <base-table></base-table>
+        <module-table></module-table>
     </div>
 </template>
 

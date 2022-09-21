@@ -1,6 +1,6 @@
 <template>
     <!-- 表示路由页面根节点 -->
-    <section class="work">
+    <section>
         <!-- 可以是多个视图 pages -->
         <keep-alive>
             <component :is="currView"></component>
@@ -13,6 +13,7 @@
     import WorkView from "./WorkView.vue";
 
     export default defineComponent({
+        name: "work",
         components: { WorkView },
         setup() {
             const currView = ref("WorkView");

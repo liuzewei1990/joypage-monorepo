@@ -1,6 +1,6 @@
 <template>
     <!-- 表示视图组件,用来解析element -->
-    <div class="work-component"></div>
+    <div></div>
 </template>
 
 <script lang="ts">
