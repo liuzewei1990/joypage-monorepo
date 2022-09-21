@@ -9,6 +9,7 @@
         "inspect": "vue-cli-service inspect --mode test"
     },
     "dependencies": {
+        "ant-design-vue": "^3.2.12",
         "core-js": "^3.8.3",
         "element-plus": "^2.2.17",
         "qiankun": "^2.8.0",

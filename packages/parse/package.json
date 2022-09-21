@@ -5,7 +5,7 @@
     "author": "Liu zewei <543347844@qq.com>",
     "homepage": "",
     "license": "ISC",
-    "main": "src/index.js",
+    "main": "dist/dist.umd.min.js",
     "directories": {
         "lib": "lib",
         "test": "__tests__"
