@@ -5,10 +5,8 @@
     </div>
 </template>
 
-<script lang="ts">
+<script>
     import { defineComponent } from "vue";
-    import HelloWorld from "@pageA/components/HelloWorld.vue"; // @ is an alias to /src
-
     export default defineComponent({
         name: "HomeView",
         components: {
