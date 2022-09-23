@@ -1,7 +1,7 @@
 {
     "root": {
         "type": "object",
-        "title": "条件",
+        "title": "页面json",
         "properties": {
             "workId": {
                 "type": "number",
@@ -27,6 +27,10 @@
                 "type": "string",
                 "title": "页面背景"
             },
+            "viewIndex": {
+                "type": "string",
+                "title": "渲染哪个tabs视图,后续通过组件按钮交互控制"
+            },
             "views": {
                 "type": "array",
                 "title": "页面tabs视图",
@@ -51,7 +55,7 @@
                                         "type": "string",
                                         "title": "元素ID（容器）"
                                     },
-                                    "style": {
+                                    "elStyle": {
                                         "type": "object",
                                         "title": "元素样式"
                                     },
@@ -79,7 +83,7 @@
                                     },
                                     "coType": {
                                         "type": "string",
-                                        "title": "组件类型"
+                                        "title": "组件类型, vue组件 | web component组件 | work组件"
                                     }
                                 }
                             }
