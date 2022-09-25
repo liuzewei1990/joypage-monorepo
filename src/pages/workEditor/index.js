@@ -4,6 +4,9 @@ import router from "./router";
 
 // import joyComponents from "@joy/components";
 // import joyParse from "@joy/parse";
-// import joySdk from "@joy/sdk";
-
-createApp(App).use(router).mount("#app");
+import * as workUi from "work-ui";
+console.log(workUi);
+const app = createApp(App);
+app.use(router);
+app.use(workUi);
+app.mount("#app");
