@@ -9,15 +9,23 @@
         "inspect": "vue-cli-service inspect --mode test"
     },
     "dependencies": {
-        "ant-design-vue": "^3.2.12",
-        "axios": "^0.21.1",
+        "@arco-design/web-vue": "^2.34.1",
+        "@types/mockjs": "^1.0.4",
+        "@vueuse/core": "^7.3.0",
+        "arco-design-pro-vue": "^2.5.11",
+        "axios": "^0.24.0",
         "core-js": "^3.8.3",
-        "element-plus": "^2.2.17",
-        "qiankun": "^2.8.0",
-        "store": "^2.0.12",
+        "dayjs": "^1.10.7",
+        "echarts": "^5.2.2",
+        "lodash": "^4.17.21",
+        "mitt": "^3.0.0",
+        "nprogress": "^0.2.0",
+        "pinia": "^2.0.9",
+        "query-string": "^7.0.1",
         "vue": "^3.2.13",
-        "vue-router": "^4.0.3",
-        "vuex": "^4.0.2"
+        "vue-echarts": "^6.0.0",
+        "vue-i18n": "^9.2.2",
+        "vue-router": "^4.0.14"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.4.0",
@@ -33,10 +41,13 @@
         "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-vue": "^8.0.3",
         "lerna": "^5.5.1",
+        "less": "^4.0.0",
         "less-loader": "^11.0.0",
+        "mockjs": "^1.1.0",
         "prettier": "^2.4.1",
         "scss-loader": "^0.0.1",
         "typescript": "~4.5.5",
+        "style-resources-loader": "^1.5.0",
         "vue-cli-plugin-joypage": "^1.1.2"
     },
     "workspaces": [

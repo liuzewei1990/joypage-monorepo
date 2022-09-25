@@ -2,20 +2,33 @@
     "compilerOptions": {
         "target": "esnext",
         "module": "esnext",
+        // 是否移除原有的注释
+        "removeComments": false,
+        // 是否对js文件进行编译
+        "allowJs": false,
+        // 是否检测js代码是否符合语法规范
+        "checkJs": false,
+        // 所有严格检查的总开关
         "strict": true,
         "jsx": "preserve",
+        // 编译模式
         "moduleResolution": "node",
+        "noImplicitAny": false,
         "skipLibCheck": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "forceConsistentCasingInFileNames": true,
         "useDefineForClassFields": true,
         "sourceMap": true,
-        "baseUrl": ".",
+        // 按照模块的形式导入声明文件位置，默认是在typeRoots选项默认配置的node_modules/@types下查找
         "types": ["webpack-env"],
+        // paths的基础路径
+        "baseUrl": ".",
+        // 相对baseUrl声明文件的位置
         "paths": {
             "@/*": ["src/*"]
         },
+        //要使用的库
         "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
     },
     "include": ["src/pages/admin/**/*.ts", "src/pages/admin/**/*.tsx", "src/pages/admin/**/*.vue", "src/pages/admin/**/*.js"],
