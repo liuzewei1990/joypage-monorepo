@@ -31,6 +31,6 @@
         //要使用的库
         "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
     },
-    "include": ["src/pages/admin/**/*.ts", "src/pages/admin/**/*.tsx", "src/pages/admin/**/*.vue", "src/pages/admin/**/*.js"],
+    "include": ["src/pages/workEditor/**/*.ts", "src/pages/workEditor/**/*.tsx", "src/pages/workEditor/**/*.vue"],
     "exclude": ["node_modules"]
 }

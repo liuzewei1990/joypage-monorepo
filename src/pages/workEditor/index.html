@@ -6,12 +6,19 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
         <title><%= htmlWebpackPlugin.options.title %></title>
+        <link rel="stylesheet" href="<%= BASE_URL %>arco-design/dist/arco.css" />
     </head>
     <body>
         <noscript>
             <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
         </noscript>
         <div id="app"></div>
+        <script src="<%= BASE_URL %>vue/dist/vue.global.js"></script>
+        <script src="<%= BASE_URL %>vue-router/dist/vue-router.global.prod.js"></script>
+        <!-- <script src="<%= BASE_URL %>pinia/dist/pinia.iife.prod.js"></script> -->
+        <script src="<%= BASE_URL %>axios/dist/axios.min.js"></script>
+        <script src="<%= BASE_URL %>arco-design/dist/arco-vue.min.js"></script>
+        <script src="<%= BASE_URL %>arco-design/dist/arco-vue-icon.min.js"></script>
         <!-- built files will be auto injected -->
     </body>
 </html>
