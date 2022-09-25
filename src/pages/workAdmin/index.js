@@ -8,10 +8,8 @@ import i18n from "./locale";
 // import directive from "./directive";
 import "./mock";
 import App from "./App.vue";
-import "@arco-design/web-vue/dist/arco.css";
 import "@workAdmin/assets/style/global.less";
 // import "@workAdmin/api/interceptor";
-
 const app = createApp(App);
 
 app.use(ArcoVue, {});
