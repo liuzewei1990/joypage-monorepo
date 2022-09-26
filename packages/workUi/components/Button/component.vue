@@ -1,5 +1,5 @@
 <template>
-    <Button type="primary" v-bind="$attrs">{{ text }}</Button>
+    <Button type="primary" class="work-btn" v-bind="$attrs">{{ text }}</Button>
 </template>
 
 <script setup>
@@ -14,3 +14,9 @@
 
     const text = computed(() => props.text);
 </script>
+<style lang="less" scoped>
+    .work-btn {
+        width: 100%;
+        height: 100%;
+    }
+</style>

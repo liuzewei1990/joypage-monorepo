@@ -1,15 +1,15 @@
 <template>
     <!-- 表示页面中的一个视图 -->
     <section class="work-view">
-        <!-- 视图中的组件模块 -->
-        <div v-for="item in workComponents" :key="item.elId">
-            <work-component :workComponentItem="item"></work-component>
-        </div>
+        <work-layout v-model:layout="workComponents">
+            <work-component v-for="item in workComponents" :key="item.elId" :workComponentItem="item"></work-component>
+        </work-layout>
     </section>
 </template>
 
 <script setup>
-    import { computed } from "vue";
+    import { computed, ref } from "vue";
+    import { GridItem, GridLayout, eventBusKey } from "vue-grid-layout-next";
 
     const props = defineProps({
         workViewItem: {
@@ -24,4 +24,12 @@
     const workComponents = computed(() => props.workViewItem.elements);
 </script>
 
-<style scoped></style>
+<style lang="less" scoped>
+    .work-view {
+        background: #f9f9f9;
+
+        .box {
+            background: #f3f3f3;
+        }
+    }
+</style>

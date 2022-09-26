@@ -1,11 +1,13 @@
 import ArcoVue from "@arco-design/web-vue";
 import ArcoVueIcon from "@arco-design/web-vue/es/icon";
+import "vue-grid-layout-next/dist/style.css";
 
 import WorkBase from "work-base";
 import WorkUi from "work-ui";
 
 import Work from "./components/Work";
 import WorkView from "./components/WorkView";
+import WorkLayout from "./components/WorkLayout";
 import WorkComponent from "./components/WorkComponent";
 
 const install = function (app) {
@@ -20,6 +22,7 @@ const install = function (app) {
     // 注册Work家族组件
     app.component("work", Work);
     app.component("work-view", WorkView);
+    app.component("work-layout", WorkLayout);
     app.component("work-component", WorkComponent);
 };
 

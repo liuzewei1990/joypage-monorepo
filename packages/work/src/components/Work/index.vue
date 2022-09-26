@@ -24,4 +24,9 @@
     const views = computed(() => props.workItem.views);
 </script>
 
-<style scoped></style>
+<style lang="less" scoped>
+    .work {
+        position: relative;
+        background: #e3e3e3;
+    }
+</style>
