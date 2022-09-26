@@ -12,8 +12,10 @@
         "build:watch": "vue-cli-service build --target lib --name work src/index.js --watch"
     },
     "dependencies": {
+        "@arco-design/web-vue": "^2.34.1",
         "core-js": "^3.8.3",
-        "vue": "^3.2.13"
+        "vue": "^3.2.13",
+        "work-ui": "^0.0.0"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.4.0",

@@ -2,9 +2,7 @@
     <!-- 表示路由页面根节点 -->
     <section>
         <!-- 可以是多个视图 pages -->
-        <keep-alive>
-            <component :is="currView"></component>
-        </keep-alive>
+        <work-view></work-view>
     </section>
 </template>
 

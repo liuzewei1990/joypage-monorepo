@@ -6,4 +6,4 @@ const install = function (app) {
     }
 };
 
-export { install };
+export default { install };
