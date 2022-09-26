@@ -1,11 +1,11 @@
-# `sdk`
+# `work-base`
 
 > TODO: description
 
 ## Usage
 
 ```
-const sdk = require('sdk');
+import workBase form "work-base"
 
 // TODO: DEMONSTRATE API
 ```
