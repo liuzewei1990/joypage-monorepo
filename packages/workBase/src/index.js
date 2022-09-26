@@ -1,6 +1,8 @@
-"use strict";
 import array from "lodash/array";
 
-export default function sdk() {
-    return "Hello from sdk";
-}
+const install = function (app) {
+    app.config.globalProperties["$workApi"] = {};
+    app.config.globalProperties["$workUtils"] = {};
+};
+
+export default { install };

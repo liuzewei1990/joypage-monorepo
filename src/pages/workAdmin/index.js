@@ -1,7 +1,7 @@
 import { createApp } from "vue";
-import ArcoVue from "@arco-design/web-vue";
-import ArcoVueIcon from "@arco-design/web-vue/es/icon";
 // import globalComponents from "@workAdmin/components";
+import work from "work";
+
 import router from "./router";
 import store from "./store";
 import i18n from "./locale";
@@ -12,9 +12,7 @@ import "@workAdmin/assets/style/global.less";
 // import "@workAdmin/api/interceptor";
 const app = createApp(App);
 
-app.use(ArcoVue, {});
-app.use(ArcoVueIcon);
-
+app.use(work);
 app.use(router);
 app.use(store);
 app.use(i18n);
