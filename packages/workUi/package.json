@@ -8,15 +8,17 @@
     "main": "src/index.js",
     "scripts": {
         "add:component": "joypage-create-component",
-        "dev": "start-storybook -p 8080",
+        "dev": "start-storybook -p 8000",
         "serve": "vue-cli-service serve src/index.js",
         "build": "vue-cli-service build --target lib --name workUi src/index.js",
         "build:watch": "vue-cli-service build --target lib --name workUi src/index.js --watch",
         "build-storybook": "build-storybook"
     },
     "dependencies": {
+        "@arco-design/web-vue": "^2.34.1",
         "core-js": "^3.8.3",
-        "vue": "^3.2.13"
+        "vue": "^3.2.13",
+        "work-base": "^0.0.0"
     },
     "devDependencies": {
         "@babel/core": "^7.19.1",

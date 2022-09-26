@@ -45,7 +45,7 @@
                                 elId: "30001",
                                 elStyle: {},
                                 coType: "vue",
-                                coName: "a-button",
+                                coName: "Button",
                                 coProps: { type: "primary" },
                                 coEvent: [],
                                 coMethods: []
@@ -90,8 +90,8 @@
                                 elId: "30001",
                                 elStyle: {},
                                 coType: "vue",
-                                coName: "a-button",
-                                coProps: { type: "primary" },
+                                coName: "Button",
+                                coProps: { type: "primary", text: "提交" },
                                 coEvent: [],
                                 coMethods: []
                             },
