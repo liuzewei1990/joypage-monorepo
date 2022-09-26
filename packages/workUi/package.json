@@ -5,13 +5,13 @@
     "author": "Liu zewei <543347844@qq.com>",
     "homepage": "",
     "license": "ISC",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
         "add:component": "joypage-create-component",
         "dev": "start-storybook -p 8080",
-        "serve": "vue-cli-service serve index.js",
-        "build": "vue-cli-service build --target lib --name workUi index.js",
-        "build:watch": "vue-cli-service build --target lib --name workUi index.js --watch",
+        "serve": "vue-cli-service serve src/index.js",
+        "build": "vue-cli-service build --target lib --name workUi src/index.js",
+        "build:watch": "vue-cli-service build --target lib --name workUi src/index.js --watch",
         "build-storybook": "build-storybook"
     },
     "dependencies": {

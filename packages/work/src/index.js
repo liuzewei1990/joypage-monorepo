@@ -1,16 +1,13 @@
-import { Components } from "@joy/components";
-import WorkComponent from "./lib/Work.vue";
+// import { Components } from "";
+import Work from "./components/Work";
+import WorkView from "./components/WorkView";
+import WorkViewComponent from "./components/WorkViewComponent";
 
-const install = function (Vue) {
-    // 注册解析器组件
-    Vue.component(WorkComponent.name, WorkComponent);
-    // 注册所有组件
-    Components.forEach((co) => {
-        Vue.component(co.name, co.component);
-    });
+const install = function (app) {
+    // 注册Work家族组件
+    app.component(Work.name, Work);
+    app.component(WorkView.name, WorkView);
+    app.component(WorkViewComponent.name, WorkViewComponent);
 };
 
-if (typeof window !== "undefined" && window.Vue) {
-    install(window.Vue);
-}
-export default { install, Components };
+export default { install };

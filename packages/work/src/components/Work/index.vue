@@ -8,20 +8,18 @@
     </section>
 </template>
 
-<script lang="ts">
-    import { defineComponent, ref } from "vue";
-    import WorkView from "./WorkView.vue";
+<script>
+    import { ref } from "vue";
 
-    export default defineComponent({
+    export default {
         name: "work",
-        components: { WorkView },
         setup() {
-            const currView = ref("WorkView");
+            const currView = ref("work-wiew");
 
             // 通过work对象来通知{currView变量}渲染哪个WorkView
             return { currView };
         }
-    });
+    };
 </script>
 
 <style scoped></style>
